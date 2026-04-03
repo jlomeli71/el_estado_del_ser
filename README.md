@@ -116,7 +116,7 @@ El desapego no es abandono, es liberación con amor. Como los árboles que suelt
 Cuando la mente racional intenta resolver un problema espiritual, a menudo crea más confusión. Esta pista te invita a soltar el control mental y confiar en la sabiduría divina. La **Llave de la Luz** apaga los programas mentales que nublan tu juicio y te devuelve al **Punto Cero**: ese espacio de silencio interior donde no hay pensamiento, solo presencia, y donde la inspiración divina puede finalmente ser escuchada.
 
 ### 6. Paz en el Reflejo
-El amor propio es la raíz de toda sanación. Esta pista es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios, las críticas y las máscaras que el mundo nos invita a usar. A través de la oración **"Yo soy el I"**, reconoces tu identidad como una extensión directa e impecable de lo Divino. El **Espejo** espiritual te devuelve la imagen de quién realmente eres: perfecto, completo y merecedor de amor.
+El amor propio es la raíz de toda sanación. Esta pista es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios, las críticas y las máscaras que el mundo nos invita a usar. A través de la oración **"Yo Soy el Yo"**, reconoces tu identidad como una extensión directa e impecable de lo Divino. El **Espejo** espiritual te devuelve la imagen de quién realmente eres: perfecto, completo y merecedor de amor.
 
 ### 7. Vínculos de Seda
 Toda relación es un espejo de nuestro mundo interior. Lo que nos molesta del otro es, invariablemente, una memoria en nosotros que pide atención. Esta pista utiliza el **Papel para Moscas** para atrapar juicios y resentimientos antes de que se conviertan en conflicto, y los **Pétalos de Rosa** para transmutar el desamor en comprensión. El **Chocolate Caliente** suaviza las memorias de manipulación y restaura la equanimidad en tus relaciones más íntimas.
@@ -530,7 +530,7 @@ Soy la luz que ningún miedo encierra.
 Mírate... con los ojos de quien te ama sin condición...
 Ve más allá de lo que crees que eres...
 Ve la luz que eres...
-*Yo soy el I... Yo soy el I...*
+*Yo soy el Yo... Yo soy el Yo...*
 
 El espejo no miente cuando miras con amor,
 Refleja la divinidad que hay en tu interior.
