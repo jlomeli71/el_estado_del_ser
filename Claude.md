@@ -21,11 +21,11 @@ Psicólogo con experiencia en terapias holísticas (especialmente Ho'oponopono),
 - Se mantuvo la coherencia temática con el Ho'oponopono
 
 ### 3. Tres Canciones Adicionales
-Se agregaron 3 canciones adicionales con el mismo estilo:
+Se agregaron 3 canciones adicionales con el mismo estilo, y se reordenó el cierre:
 - **Canción 10: Fuego que Sana** — Liberación de la Ira
 - **Canción 11: El Abrazo del Perdón** — Liberación de la Culpa
 - **Canción 12: Más Allá del Umbral** — Liberación del Miedo
-- **Canción 13: Retorno al Puerto** — Cierre y Protección *(movida al final como canción de cierre del álbum)*
+- **Canción 13: Retorno al Puerto** — Cierre y Protección *(canción de cierre del álbum, originalmente la 10)*
 
 Para cada canción adicional se generó:
 - Imagen representativa (descripción en `/images/`)

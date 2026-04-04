@@ -28,15 +28,14 @@ Las imágenes originales de las canciones 1-10 provienen del documento fuente (`
 | 7 | Vínculos de Seda | `"Two silhouettes connected by golden silk threads, rose petals falling, forgiveness and love, soft warm light, relationship healing, delicate and sacred. Aspect ratio 16:9.  "` |
 | 8 | Memoria Sagrada | `"Tree of life with roots going deep into ancestors and branches into future generations, ancestral healing, sacred geometry, earth tones and light, timeless. Aspect ratio 16:9."` |
 | 9 | El Aliento de Vida | `"Person breathing in sacred breath on mountaintop, visible breath becoming light, hawaiian landscape, ocean and mountain, wind and sky, vita force mana. Aspect ratio 16:9."` |
-| 10 | Retorno al Puerto | `"Peaceful harbor at golden hour, boat returning home, calm water, tibetan bells floating, golden light, end of journey, protection and peace. Aspect ratio 16:9."` |
 
 ---
 
-## Canciones 11-13 (Nuevas)
+## Canciones 10-13 (Nuevas y Cierre)
 
-### Canción 11: Fuego que Sana (Liberación de la Ira)
+### Canción 10: Fuego que Sana (Liberación de la Ira)
 
-**Archivo:** `cancion_11_ira_prompt.txt`
+**Archivo:** `cancion_10_ira.jpg`
 
 ```
 A person sitting in meditation surrounded by orange and golden flames that gradually 
@@ -48,9 +47,9 @@ detailed, ethereal. Aspect ratio 16:9.
 
 ---
 
-### Canción 12: El Abrazo del Perdón (Liberación de la Culpa)
+### Canción 11: El Abrazo del Perdón (Liberación de la Culpa)
 
-**Archivo:** `cancion_12_culpa_prompt.txt`
+**Archivo:** `cancion_11_culpa.jpg`
 
 ```
 A gentle figure embracing their inner child (small version of themselves), soft warm 
@@ -62,9 +61,9 @@ visualization. Aspect ratio 16:9.
 
 ---
 
-### Canción 13: Más Allá del Umbral (Liberación del Miedo)
+### Canción 12: Más Allá del Umbral (Liberación del Miedo)
 
-**Archivo:** `cancion_13_miedo_prompt.txt`
+**Archivo:** `cancion_12_miedo.jpg`
 
 ```
 A silhouette of a person standing at an open doorway threshold, stepping from deep 
@@ -72,6 +71,17 @@ blue-purple darkness into a vast warm golden light landscape. The doorway is anc
 and sacred, carved with gentle symbols. Freedom and courage theme. Dramatic lighting 
 contrast from dark to light. Hope and liberation. Spiritual digital art. 
 Deep blue-purple to warm gold color transition. Aspect ratio 16:9.
+```
+
+---
+
+### Canción 13: Retorno al Puerto (Cierre y Protección)
+
+**Archivo:** `cancion_13_retorno.jpg`
+
+```
+Peaceful harbor at golden hour, boat returning home, calm water, tibetan bells floating, 
+golden light, end of journey, protection and peace. Aspect ratio 16:9.
 ```
 
 ---
@@ -95,8 +105,8 @@ cancion_06_paz.jpg
 cancion_07_vinculos.jpg
 cancion_08_memoria.jpg
 cancion_09_aliento.jpg
-cancion_10_retorno.jpg
-cancion_11_ira.jpg
-cancion_12_culpa.jpg
-cancion_13_miedo.jpg
+cancion_10_ira.jpg
+cancion_11_culpa.jpg
+cancion_12_miedo.jpg
+cancion_13_retorno.jpg
 ```
