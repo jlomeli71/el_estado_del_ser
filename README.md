@@ -187,7 +187,7 @@ Es un paso más hacia nuestro amor verdadero.
 *Te amo*, porque en el amor vuelvo a mi hogar.
 
 **Puente**
-Limpiando, borrando, volviendo a Cero.
+Limpiando, borrando, volviendo al Hogar.
 Limpiando, borrando, luz es lo que quiero.
 Que la energía tóxica sea luz divina,
 En esta paz sagrada que me ilumina.
@@ -208,7 +208,7 @@ Solo permite que se vayan...
 Una y otra vez, suavemente, con amor...
 
 **Outro**
-La paz del *"I"* está conmigo.
+La paz del *"Yo Soy"* está conmigo.
 Está hecho, y hecho está.
 Gracias, gracias, gracias.
 Te amo, te amo, te amo.

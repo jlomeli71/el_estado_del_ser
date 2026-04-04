@@ -19,16 +19,16 @@ Las imágenes originales de las canciones 1-10 provienen del documento fuente (`
 
 | # | Canción | Prompt sugerido |
 |---|---|---|
-| 1 | El Mantra del Corazón | `"Meditative figure in lotus position, surrounded by gentle waves and golden light, hawaiian ocean background, sacred geometry, peaceful divine light, digital art, spiritual, warm and ethereal"` |
-| 2 | Lluvia de Provisión | `"Golden rain falling on lush tropical landscape, hummingbird hovering in abundance, green and gold tones, prosperity and nature, sacred water drops, spiritual abundance visualization"` |
-| 3 | Calma en el Hielo | `"Blue crystal ice formations melting into green healing light, medical meditation, crystalline blue and emerald green palette, sacred healing, serene cold landscape"` |
-| 4 | Soltando las Hojas | `"Autumn leaves falling in a sacred forest, figure releasing leaves to the wind, transition from autumn to spring in same image, letting go theme, soft golden and pink tones"` |
-| 5 | La Luz de la Verdad | `"Divine light breaking through storm clouds, a key made of light unlocking darkness, spiritual clarity, light rays, ascending energy, sacred geometry, blue and white"` |
-| 6 | Paz en el Reflejo | `"A person looking into a still pond reflecting golden divine light instead of their image, self-love theme, surrounded by white flowers, peaceful and luminous"` |
-| 7 | Vínculos de Seda | `"Two silhouettes connected by golden silk threads, rose petals falling, forgiveness and love, soft warm light, relationship healing, delicate and sacred"` |
-| 8 | Memoria Sagrada | `"Tree of life with roots going deep into ancestors and branches into future generations, ancestral healing, sacred geometry, earth tones and light, timeless"` |
-| 9 | El Aliento de Vida | `"Person breathing in sacred breath on mountaintop, visible breath becoming light, hawaiian landscape, ocean and mountain, wind and sky, vita force mana"` |
-| 10 | Retorno al Puerto | `"Peaceful harbor at golden hour, boat returning home, calm water, tibetan bells floating, golden light, end of journey, protection and peace"` |
+| 1 | El Mantra del Corazón | `"Meditative figure in lotus position, surrounded by gentle waves and golden light, hawaiian ocean background, sacred geometry, peaceful divine light, digital art, spiritual, warm and ethereal. Aspect ratio 16:9."` |
+| 2 | Lluvia de Provisión | `"Golden rain falling on lush tropical landscape, hummingbird hovering in abundance, green and gold tones, prosperity and nature, sacred water drops, spiritual abundance visualization. Aspect ratio 16:9."` |
+| 3 | Calma en el Hielo | `"Blue crystal ice formations melting into green healing light, medical meditation, crystalline blue and emerald green palette, sacred healing, serene cold landscape. Aspect ratio 16:9."` |
+| 4 | Soltando las Hojas | `"Autumn leaves falling in a sacred forest, figure releasing leaves to the wind, transition from autumn to spring in same image, letting go theme, soft golden and pink tones. Aspect ratio 16:9."` |
+| 5 | La Luz de la Verdad | `"Divine light breaking through storm clouds, a key made of light unlocking darkness, spiritual clarity, light rays, ascending energy, sacred geometry, blue and white. Aspect ratio 16:9."` |
+| 6 | Paz en el Reflejo | `"A person looking into a still pond reflecting golden divine light instead of their image, self-love theme, surrounded by white flowers, peaceful and luminous. Aspect ratio 16:9."` |
+| 7 | Vínculos de Seda | `"Two silhouettes connected by golden silk threads, rose petals falling, forgiveness and love, soft warm light, relationship healing, delicate and sacred. Aspect ratio 16:9.  "` |
+| 8 | Memoria Sagrada | `"Tree of life with roots going deep into ancestors and branches into future generations, ancestral healing, sacred geometry, earth tones and light, timeless. Aspect ratio 16:9."` |
+| 9 | El Aliento de Vida | `"Person breathing in sacred breath on mountaintop, visible breath becoming light, hawaiian landscape, ocean and mountain, wind and sky, vita force mana. Aspect ratio 16:9."` |
+| 10 | Retorno al Puerto | `"Peaceful harbor at golden hour, boat returning home, calm water, tibetan bells floating, golden light, end of journey, protection and peace. Aspect ratio 16:9."` |
 
 ---
 

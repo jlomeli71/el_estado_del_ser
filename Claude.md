@@ -80,3 +80,9 @@ la_magia_del_ser/
 - Las instrucciones de Suno AI están incluidas en cada sección de canción en el README.md
 - Los links de YouTube son temporales y están desactivados hasta tener la playlist real
 - Las imágenes decorativas del .docx original no se incluyeron en el markdown (solo descripciones de prompt)
+
+## Instrucciones para Claude
+
+Se actualizo el link para la canción 1, elimina las instrucciones de Suno para esta cancion en la pagina web.
+https://youtu.be/mQp1anXzGnA
+
