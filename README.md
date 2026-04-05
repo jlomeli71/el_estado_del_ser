@@ -237,7 +237,7 @@ Te amo, te amo, te amo.
 Divinidad, limpia en mí lo que contribuye a la escasez.
 Borro los programas de miedo, borro la rigidez.
 Abro las puertas a la riqueza que es natural.
-Suelto la angustia, abrazo mi estado ancestral.
+Suelto la angustia, abrazo mi estado natural.
 
 Viene de mis padres, viene de sus padres también,
 El miedo de que nunca será suficiente el bien.
@@ -268,7 +268,7 @@ No tengo que luchar, no tengo que temer,
 La provisión divina siempre llegará a su tiempo.
 
 *Llovizna sobre mis deudas, Colibrí en mi bolsillo,*
-*Jugo de Naranja limpiando lo que fue amarillo.*
+*Jugo de Naranja limpiando lo que fue equivoco.*
 Gracias, Divinidad, por este nuevo amanecer,
 Por la abundancia que permito recibir hoy en mi ser.
 
@@ -278,7 +278,8 @@ Por la abundancia que permito recibir hoy en mi ser.
 Visualiza una lluvia suave y dorada cayendo sobre ti...
 Cada gota limpia una creencia de escasez...
 Sientes cómo se disuelve el miedo al dinero...
-Un colibrí llega y te susurra: *"Ya eres próspero..."*
+Un colibrí llega y te susurra: *"Ya eres próspero, es tu estado natural..."*
+*Llovizna... Colibrí...*
 *Llovizna... Colibrí...*
 
 **Final**

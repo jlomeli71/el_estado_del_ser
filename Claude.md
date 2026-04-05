@@ -91,6 +91,8 @@ la_magia_del_ser/
 - Los links de YouTube se activan progresivamente conforme se suben los videos
 - Las imágenes decorativas del .docx original no se incluyeron en el markdown (solo descripciones de prompt)
 - Canción 1 ya tiene link real de YouTube: https://youtu.be/PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u
+- Canción 2 ya tiene link real de YouTube: https://youtu.be/lVFkq6GPEgo
+- Álbum completo (playlist): https://www.youtube.com/playlist?list=PLhHPSBekmq--K6s-AqKRwjCdmfcQsmBWN
 
 ---
 
@@ -153,7 +155,7 @@ Pendiente: integrarlas en la sección de la Guía del Viajero o en cada panel de
 
 ### 9. Links de YouTube Pendientes
 
-Activar los links de YouTube conforme se suban los videos de las canciones 2-13.
+Activar los links de YouTube conforme se suban los videos de las canciones 3-13.
 Para cada canción: cambiar `href="#"` por el link real y quitar `(próximamente)`.
 
 ## Tareas Completadas (Sesión Anterior)
