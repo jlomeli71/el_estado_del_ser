@@ -22,6 +22,9 @@
       --ink: #1C2A45;
       --gold: #C8A84B;
       --rose: #D4857A;
+      --amethyst: #9B7EC8;
+      --amber: #E8A83A;
+      --mist: #D6EAE0;
 
       --font-display: 'Cormorant Garamond', Georgia, serif;
       --font-body: 'Nunito', sans-serif;
@@ -608,9 +611,31 @@
       gap: 1rem;
     }
 
+    .track-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .track-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+      filter: saturate(0.85);
+      display: block;
+    }
+
+    .track-item:hover .track-thumb img {
+      transform: scale(1.06);
+      filter: saturate(1.1);
+    }
+
     .track-item {
       display: grid;
-      grid-template-columns: 52px 1fr auto;
+      grid-template-columns: 72px 52px 1fr auto;
       align-items: center;
       gap: 1.25rem;
       padding: 1.25rem 1.5rem;
@@ -908,34 +933,6 @@
       font-style: italic;
     }
 
-    .suno-box {
-      margin-top: 2rem;
-      padding: 1.5rem;
-      background: rgba(38, 59, 106, 0.04);
-      border: 1px solid rgba(38, 59, 106, 0.1);
-      border-radius: var(--radius);
-    }
-
-    .suno-title {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--navy);
-      margin-bottom: 0.75rem;
-      opacity: 0.7;
-    }
-
-    .suno-prompt {
-      font-family: 'Courier New', monospace;
-      font-size: 0.8rem;
-      color: var(--slate);
-      line-height: 1.6;
-      background: rgba(105, 132, 169, 0.08);
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-    }
-
     /* ── FOOTER ── */
     footer {
       background: var(--navy);
@@ -1038,13 +1035,293 @@
       }
 
       .track-item {
-        grid-template-columns: 44px 1fr;
+        grid-template-columns: 56px 40px 1fr;
+      }
+
+      .track-thumb {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+      }
+
+      .track-num {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
       }
 
       .track-yt {
         display: none;
       }
     }
+    /* ── DESIGN ENHANCEMENTS ── */
+
+    /* Hero: gradient más rico con amethyst */
+    #hero {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(160, 213, 133, 0.30) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 80% 85%, rgba(155, 126, 200, 0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 35% at 15% 70%, rgba(105, 132, 169, 0.10) 0%, transparent 65%),
+        var(--white);
+    }
+
+    .hero-badge {
+      background: linear-gradient(90deg, rgba(160, 213, 133, 0.2), rgba(155, 126, 200, 0.15));
+      border-color: rgba(160, 213, 133, 0.5);
+      letter-spacing: 0.14em;
+    }
+
+    .hero h1 {
+      background: linear-gradient(135deg, var(--navy) 40%, var(--slate) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Section label: línea decorativa izquierda */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--amethyst);
+    }
+
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--sage), var(--amethyst));
+      border-radius: 2px;
+    }
+
+    /* Sección guía: gradiente amethyst */
+    #guia {
+      background: linear-gradient(160deg, rgba(155, 126, 200, 0.06) 0%, rgba(105, 132, 169, 0.07) 50%, var(--white) 100%);
+    }
+
+    /* Phrase cards: sombra más pronunciada en hover */
+    .phrase-card {
+      transition: var(--transition), box-shadow 0.4s ease;
+    }
+
+    .phrase-card:hover {
+      box-shadow: 0 12px 40px rgba(38, 59, 106, 0.16), 0 0 0 3px rgba(160, 213, 133, 0.2);
+    }
+
+    /* Track item: border-left animado */
+    .track-item {
+      border-left: 3px solid transparent;
+      transition: var(--transition), border-left-color 0.25s;
+    }
+
+    .track-item:hover {
+      border-left-color: var(--sage);
+      transform: translateX(4px);
+    }
+
+    .track-item.expanded {
+      border-left-color: var(--amethyst);
+    }
+
+    /* Track description: fondo mist */
+    .track-description {
+      background: rgba(214, 234, 224, 0.6);
+      border: 1px solid rgba(160, 213, 133, 0.2);
+    }
+
+    /* Lyric header: gradiente con mist */
+    .lyric-header {
+      background: linear-gradient(135deg, rgba(214, 234, 224, 0.8) 0%, rgba(238, 250, 189, 0.5) 100%);
+      border: 1px solid rgba(160, 213, 133, 0.2);
+    }
+
+    /* Lyric chorus: border más grueso */
+    .lyric-content .chorus {
+      border-left: 4px solid var(--sage);
+    }
+
+    /* Lyric bridge: acento amethyst */
+    .lyric-content .bridge {
+      border-left: 3px solid var(--amethyst);
+      background: rgba(155, 126, 200, 0.06);
+    }
+
+    /* lyric-yt-link activo: acento amethyst */
+    .lyric-yt-link[href]:not([href="#"]) {
+      background: rgba(155, 126, 200, 0.15);
+      border-color: rgba(155, 126, 200, 0.5);
+      color: var(--navy);
+    }
+
+    .lyric-yt-link[href]:not([href="#"]):hover {
+      background: var(--amethyst);
+      color: var(--white);
+    }
+
+    /* Footer mejorado */
+    footer {
+      background: linear-gradient(135deg, var(--navy) 0%, #1a2d52 100%);
+      padding: 4rem 2rem;
+    }
+
+    /* ── YOUTUBE MODAL ── */
+    .yt-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .yt-modal[hidden] {
+      display: none;
+    }
+
+    .yt-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(28, 42, 69, 0.80);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      cursor: pointer;
+    }
+
+    .yt-modal-card {
+      position: relative;
+      background: var(--white);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 680px;
+      box-shadow: 0 24px 80px rgba(28, 42, 69, 0.45);
+      overflow: hidden;
+      animation: modalIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.92) translateY(24px); }
+      to   { opacity: 1; transform: scale(1)    translateY(0); }
+    }
+
+    .yt-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(28, 42, 69, 0.12);
+      color: var(--navy);
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .yt-modal-close:hover {
+      background: var(--amethyst);
+      color: #fff;
+    }
+
+    .yt-modal-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 2rem 1.5rem;
+      background: linear-gradient(135deg, rgba(214, 234, 224, 0.9) 0%, rgba(155, 126, 200, 0.1) 100%);
+    }
+
+    .yt-modal-cover {
+      width: 96px;
+      height: 96px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(28, 42, 69, 0.2);
+    }
+
+    .yt-modal-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .yt-modal-song-num {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amethyst);
+      margin-bottom: 0.4rem;
+    }
+
+    .yt-modal-title {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 0.3rem;
+    }
+
+    .yt-modal-purpose {
+      font-size: 0.82rem;
+      color: var(--slate);
+      font-style: italic;
+    }
+
+    .yt-modal-player {
+      background: #000;
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .yt-modal-player iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .yt-modal-coming-soon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: linear-gradient(135deg, var(--navy), var(--slate));
+      color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .yt-modal-coming-soon[hidden] { display: none; }
+
+    .yt-modal-coming-icon {
+      font-size: 3rem;
+      opacity: 0.75;
+    }
+
+    @media (max-width: 640px) {
+      .yt-modal-card { max-width: 100%; border-radius: 16px; }
+      .yt-modal-header { padding: 1.25rem 1.25rem 1rem; gap: 1rem; }
+      .yt-modal-cover { width: 72px; height: 72px; border-radius: 10px; }
+      .yt-modal-title { font-size: 1.2rem; }
+    }
+
   </style>
 </head>
 
@@ -1354,18 +1631,24 @@
       <div class="tracklist" id="tracklist">
 
         <div class="track-item reveal"
-          data-desc="Esta pista es el cimiento de toda tu práctica. Las cuatro frases sagradas —Lo siento, Perdóname, Gracias, Te amo— son pronunciadas aquí como un mantra de apertura. Al asumir la responsabilidad absoluta, no te culpas, sino que te empoderas. Úsala al inicio de cualquier sesión.">
+          data-desc="Esta pista es el cimiento de toda tu práctica. Las cuatro frases sagradas —Lo siento, Perdóname, Gracias, Te amo— son pronunciadas aquí como un mantra de apertura. Al asumir la responsabilidad absoluta, no te culpas, sino que te empoderas. Úsala al inicio de cualquier sesión."
+          data-song="1" data-yt="PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" data-img="images/cancion_01_mantra.jpg"
+          data-title="El Mantra del Corazón" data-purpose="Base y Limpieza General">
+          <div class="track-thumb"><img src="images/cancion_01_mantra.jpg" alt="El Mantra del Corazón" loading="lazy"></div>
           <div class="track-num">1</div>
           <div class="track-info">
             <div class="track-title">El Mantra del Corazón</div>
             <div class="track-purpose">Base y Limpieza General</div>
           </div>
-          <a href="https://youtu.be/mQp1anXzGnA" class="track-yt" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+          <a href="#" class="track-yt">▶ YouTube</a>
           <div class="track-description"></div>
         </div>
 
         <div class="track-item reveal"
-          data-desc="El miedo a la escasez es una de las memorias más profundas del ser humano. Esta pista trabaja sobre los programas de carencia y la ansiedad financiera. La Llovizna cae como un suministro constante de abundancia, mientras el Colibrí eleva tu vibración hacia la prosperidad.">
+          data-desc="El miedo a la escasez es una de las memorias más profundas del ser humano. Esta pista trabaja sobre los programas de carencia y la ansiedad financiera. La Llovizna cae como un suministro constante de abundancia, mientras el Colibrí eleva tu vibración hacia la prosperidad."
+          data-song="2" data-yt="" data-img="images/cancion_02_lluvia.jpg"
+          data-title="Lluvia de Provisión" data-purpose="Prosperidad y Abundancia">
+          <div class="track-thumb"><img src="images/cancion_02_lluvia.jpg" alt="Lluvia de Provisión" loading="lazy"></div>
           <div class="track-num">2</div>
           <div class="track-info">
             <div class="track-title">Lluvia de Provisión</div>
@@ -1376,7 +1659,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El cuerpo físico es el templo donde se almacenan las memorias emocionales. El Hielo Azul enfría y alivia la inflamación de las memorias traumáticas, mientras el Verde Esmeralda activa los procesos de regeneración celular. Habla a tu cuerpo con compasión.">
+          data-desc="El cuerpo físico es el templo donde se almacenan las memorias emocionales. El Hielo Azul enfría y alivia la inflamación de las memorias traumáticas, mientras el Verde Esmeralda activa los procesos de regeneración celular. Habla a tu cuerpo con compasión."
+          data-song="3" data-yt="" data-img="images/cancion_03_hielo.jpg"
+          data-title="Calma en el Hielo" data-purpose="Salud y Alivio del Dolor">
+          <div class="track-thumb"><img src="images/cancion_03_hielo.jpg" alt="Calma en el Hielo" loading="lazy"></div>
           <div class="track-num">3</div>
           <div class="track-info">
             <div class="track-title">Calma en el Hielo</div>
@@ -1387,7 +1673,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El desapego no es abandono, es liberación con amor. Como los árboles que sueltan sus hojas en otoño para renacer en primavera, esta pista te acompaña en el proceso de soltar lo que ya cumplió su propósito: relaciones, hábitos, versiones de ti mismo.">
+          data-desc="El desapego no es abandono, es liberación con amor. Como los árboles que sueltan sus hojas en otoño para renacer en primavera, esta pista te acompaña en el proceso de soltar lo que ya cumplió su propósito: relaciones, hábitos, versiones de ti mismo."
+          data-song="4" data-yt="" data-img="images/cancion_04_hojas.jpg"
+          data-title="Soltando las Hojas" data-purpose="Desapego y Transición">
+          <div class="track-thumb"><img src="images/cancion_04_hojas.jpg" alt="Soltando las Hojas" loading="lazy"></div>
           <div class="track-num">4</div>
           <div class="track-info">
             <div class="track-title">Soltando las Hojas</div>
@@ -1398,7 +1687,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="Cuando la mente racional intenta resolver un problema espiritual, crea más confusión. La Llave de la Luz apaga los programas mentales que nublan tu juicio y te devuelve al Punto Cero, donde la inspiración divina puede finalmente ser escuchada.">
+          data-desc="Cuando la mente racional intenta resolver un problema espiritual, crea más confusión. La Llave de la Luz apaga los programas mentales que nublan tu juicio y te devuelve al Punto Cero, donde la inspiración divina puede finalmente ser escuchada."
+          data-song="5" data-yt="" data-img="images/cancion_05_luz.jpg"
+          data-title="La Luz de la Verdad" data-purpose="Claridad y Decisiones">
+          <div class="track-thumb"><img src="images/cancion_05_luz.jpg" alt="La Luz de la Verdad" loading="lazy"></div>
           <div class="track-num">5</div>
           <div class="track-info">
             <div class="track-title">La Luz de la Verdad</div>
@@ -1409,7 +1701,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El amor propio es la raíz de toda sanación. Esta pista es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios. A través de 'Yo Soy el Yo', reconoces tu identidad como una extensión directa e impecable de lo Divino.">
+          data-desc="El amor propio es la raíz de toda sanación. Esta pista es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios. A través de 'Yo Soy el Yo', reconoces tu identidad como una extensión directa e impecable de lo Divino."
+          data-song="6" data-yt="" data-img="images/cancion_06_paz.jpg"
+          data-title="Paz en el Reflejo" data-purpose="Amor Propio y Autoestima">
+          <div class="track-thumb"><img src="images/cancion_06_paz.jpg" alt="Paz en el Reflejo" loading="lazy"></div>
           <div class="track-num">6</div>
           <div class="track-info">
             <div class="track-title">Paz en el Reflejo</div>
@@ -1420,7 +1715,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="Toda relación es un espejo de nuestro mundo interior. El Papel para Moscas atrapa juicios y resentimientos antes de que se conviertan en conflicto, y los Pétalos de Rosa transmutan el desamor en comprensión y amor verdadero.">
+          data-desc="Toda relación es un espejo de nuestro mundo interior. El Papel para Moscas atrapa juicios y resentimientos antes de que se conviertan en conflicto, y los Pétalos de Rosa transmutan el desamor en comprensión y amor verdadero."
+          data-song="7" data-yt="" data-img="images/cancion_07_vinculos.jpg"
+          data-title="Vínculos de Seda" data-purpose="Relaciones y Conflictos">
+          <div class="track-thumb"><img src="images/cancion_07_vinculos.jpg" alt="Vínculos de Seda" loading="lazy"></div>
           <div class="track-num">7</div>
           <div class="track-info">
             <div class="track-title">Vínculos de Seda</div>
@@ -1431,7 +1729,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="La sanación generacional es uno de los actos más profundos de amor que podemos realizar. Esta canción corta los lazos kármicos con ancestros que nos transmitieron sus dolores. Al liberarlos, liberas también a quienes vendrán después.">
+          data-desc="La sanación generacional es uno de los actos más profundos de amor que podemos realizar. Esta canción corta los lazos kármicos con ancestros que nos transmitieron sus dolores. Al liberarlos, liberas también a quienes vendrán después."
+          data-song="8" data-yt="" data-img="images/cancion_08_memoria.jpg"
+          data-title="Memoria Sagrada" data-purpose="Sanación Ancestral">
+          <div class="track-thumb"><img src="images/cancion_08_memoria.jpg" alt="Memoria Sagrada" loading="lazy"></div>
           <div class="track-num">8</div>
           <div class="track-info">
             <div class="track-title">Memoria Sagrada</div>
@@ -1442,7 +1743,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El Ha, el aliento sagrado hawaiano, es la herramienta más simple y poderosa: siempre disponible, siempre presente. Esta meditación rítmica te guía a través de la respiración consciente, oxigenando no solo el cuerpo sino también el espíritu.">
+          data-desc="El Ha, el aliento sagrado hawaiano, es la herramienta más simple y poderosa: siempre disponible, siempre presente. Esta meditación rítmica te guía a través de la respiración consciente, oxigenando no solo el cuerpo sino también el espíritu."
+          data-song="9" data-yt="" data-img="images/cancion_09_aliento.jpg"
+          data-title="El Aliento de Vida" data-purpose="Conexión Espiritual">
+          <div class="track-thumb"><img src="images/cancion_09_aliento.jpg" alt="El Aliento de Vida" loading="lazy"></div>
           <div class="track-num">9</div>
           <div class="track-info">
             <div class="track-title">El Aliento de Vida</div>
@@ -1453,7 +1757,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="La ira no es tu enemiga. Es una señal sagrada: una memoria que pide ser vista y liberada. Esta pista transforma la rabia en claridad y la frustración en fuerza creativa. El mismo fuego que destruye puede purificar cuando se trabaja con amor y conciencia.">
+          data-desc="La ira no es tu enemiga. Es una señal sagrada: una memoria que pide ser vista y liberada. Esta pista transforma la rabia en claridad y la frustración en fuerza creativa. El mismo fuego que destruye puede purificar cuando se trabaja con amor y conciencia."
+          data-song="10" data-yt="" data-img="images/cancion_10_ira.jpg"
+          data-title="Fuego que Sana" data-purpose="Liberación de la Ira">
+          <div class="track-thumb"><img src="images/cancion_10_ira.jpg" alt="Fuego que Sana" loading="lazy"></div>
           <div class="track-num">10</div>
           <div class="track-info">
             <div class="track-title">Fuego que Sana</div>
@@ -1464,7 +1771,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="La culpa es el peso más innecesario que cargamos. Esta pista te acompaña en el acto más valiente y amoroso: perdonarte a ti mismo. Las cuatro frases sagradas aquí actúan como el abrazo más profundo que tu Niño Interior ha estado esperando.">
+          data-desc="La culpa es el peso más innecesario que cargamos. Esta pista te acompaña en el acto más valiente y amoroso: perdonarte a ti mismo. Las cuatro frases sagradas aquí actúan como el abrazo más profundo que tu Niño Interior ha estado esperando."
+          data-song="11" data-yt="" data-img="images/cancion_11_culpa.jpg"
+          data-title="El Abrazo del Perdón" data-purpose="Liberación de la Culpa">
+          <div class="track-thumb"><img src="images/cancion_11_culpa.jpg" alt="El Abrazo del Perdón" loading="lazy"></div>
           <div class="track-num">11</div>
           <div class="track-info">
             <div class="track-title">El Abrazo del Perdón</div>
@@ -1475,7 +1785,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El miedo es una ilusión tejida con memorias del pasado. Esta pista trabaja con las raíces más profundas del temor. Más allá del umbral del miedo, te espera una versión más libre, más auténtica y más valiente de ti mismo.">
+          data-desc="El miedo es una ilusión tejida con memorias del pasado. Esta pista trabaja con las raíces más profundas del temor. Más allá del umbral del miedo, te espera una versión más libre, más auténtica y más valiente de ti mismo."
+          data-song="12" data-yt="" data-img="images/cancion_12_miedo.jpg"
+          data-title="Más Allá del Umbral" data-purpose="Liberación del Miedo">
+          <div class="track-thumb"><img src="images/cancion_12_miedo.jpg" alt="Más Allá del Umbral" loading="lazy"></div>
           <div class="track-num">12</div>
           <div class="track-info">
             <div class="track-title">Más Allá del Umbral</div>
@@ -1486,7 +1799,10 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El viaje concluye donde comenzó: en el centro de tu ser. Ceeport limpia tu subconsciente de forma continua, devolviendo todo a su estado de pureza. El Anillo de Oro sella tu proceso protegiéndote energéticamente. Úsala al final de tus sesiones.">
+          data-desc="El viaje concluye donde comenzó: en el centro de tu ser. Ceeport limpia tu subconsciente de forma continua, devolviendo todo a su estado de pureza. El Anillo de Oro sella tu proceso protegiéndote energéticamente. Úsala al final de tus sesiones."
+          data-song="13" data-yt="" data-img="images/cancion_13_retorno.jpg"
+          data-title="Retorno al Puerto" data-purpose="Cierre y Protección">
+          <div class="track-thumb"><img src="images/cancion_13_retorno.jpg" alt="Retorno al Puerto" loading="lazy"></div>
           <div class="track-num">13</div>
           <div class="track-info">
             <div class="track-title">Retorno al Puerto</div>
@@ -1529,19 +1845,16 @@
       <div id="lyricPanels">
 
         <!-- 1 -->
-        <div class="lyric-panel active">
+        <div class="lyric-panel active" data-song="1" data-yt="PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" data-img="images/cancion_01_mantra.jpg">
           <div class="lyric-header">
             <div class="lyric-num">1</div>
             <div class="lyric-meta">
               <div class="lyric-title">El Mantra del Corazón</div>
               <div class="lyric-purpose">Base y Limpieza General · Establece la conexión con la Divinidad</div>
             </div>
-            <a href="https://youtu.be/mQp1anXzGnA" class="lyric-yt-link" target="_blank" rel="noopener noreferrer">▶ Escuchar</a>
+            <a href="https://youtu.be/PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" class="lyric-yt-link" target="_blank" rel="noopener noreferrer">▶ Escuchar</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Sonido de olas y respiración suave, cuencos tibetanos ]</span>
-
             <span class="section-tag">Verso 1</span>
             Divinidad que habitas en mí, escucha el llamado de mi interior.
             Asumo el cien por ciento de mi realidad,
@@ -1581,7 +1894,7 @@
               Cero memorias, cero programas, solo el ahora.
               Cero límites, cero miedo, solo la aurora.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             La paz del "Yo" está conmigo.
             Está hecho, y hecho está.
             Gracias, gracias, gracias.
@@ -1590,7 +1903,7 @@
         </div>
 
         <!-- 2 -->
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="2" data-yt="" data-img="images/cancion_02_lluvia.jpg">
           <div class="lyric-header">
             <div class="lyric-num">2</div>
             <div class="lyric-meta">
@@ -1600,9 +1913,6 @@
             <a href="#" class="lyric-yt-link">▶ Escuchar (próximamente)</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Lluvia suave, tintineos cristalinos, arpa ]</span>
-
             <span class="section-tag">Verso 1</span>
             Divinidad, limpia en mí lo que contribuye a la escasez.
             Borro los programas de miedo, borro la rigidez.
@@ -1637,21 +1947,16 @@
               No tengo que luchar, no tengo que temer,
               La provisión divina siempre llegará a su tiempo.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Llovizna, llovizna, Colibrí.
             Fluyo con la abundancia de la Divinidad.
             Gracias, gracias, gracias.
             Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">ambient new age music, crystal bowls, harp, rain sounds, soft meditative vocals,
-              abundance and prosperity theme, gentle and uplifting, warm tones, 60 BPM, healing frequency</div>
-          </div>
         </div>
 
         <!-- 3 -->
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="3" data-yt="" data-img="images/cancion_03_hielo.jpg">
           <div class="lyric-header">
             <div class="lyric-num">3</div>
             <div class="lyric-meta">
@@ -1661,9 +1966,6 @@
             <a href="#" class="lyric-yt-link">▶ Escuchar (próximamente)</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Sonido ambiental gélido, cuencos de cuarzo, campanas de cristal ]</span>
-
             <span class="section-tag">Verso 1</span>
             A mi cuerpo físico le hablo hoy con compasión.
             Eres el templo que guarda cada vieja emoción.
@@ -1692,22 +1994,16 @@
             Pido que se limpie desde el inicio del tiempo,
             Todo lo que en mi cuerpo causó sufrimiento.
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Hielo Azul, Hielo Azul, Hielo Azul, Verde Esmeralda, Verde Esmeralda.
             Paz, más allá de todo entendimiento.
             Gracias, gracias, gracias.
             Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">healing meditation music, crystal singing bowls, icy ambient synths, wind chimes,
-              very slow 50 BPM, pain relief meditation, blue light visualization, theta wave binaural undertones,
-              peaceful and cold atmosphere</div>
-          </div>
         </div>
 
         <!-- 4-10 condensed panels -->
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="4" data-yt="" data-img="images/cancion_04_hojas.jpg">
           <div class="lyric-header">
             <div class="lyric-num">4</div>
             <div class="lyric-meta">
@@ -1739,19 +2035,14 @@
             Gracias por la lección, gracias por el ayer.
             Hoy elijo ser libre y volver a nacer.
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Suelto y confío. Hojas de Otoño, Flores de Primavera.
             Hágase tu voluntad.
             Gracias, gracias, gracias. Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">folk ambient meditation, soft violin, acoustic guitar, autumn wind sounds, gentle
-              piano, letting go theme, emotional but hopeful, 60 BPM, soft female vocals</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="5" data-yt="" data-img="images/cancion_05_luz.jpg">
           <div class="lyric-header">
             <div class="lyric-num">5</div>
             <div class="lyric-meta">
@@ -1777,19 +2068,14 @@
               Punto Cero, me rindo a la inspiración.
               Punto Cero, vacío en mi corazón.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Llave de la Luz, Llave de la Luz, Llave de la Luz.
             Cerrando programas, abriendo el canal.
             Gracias, gracias, gracias. Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">ethereal ambient electronic meditation, ascending synths, bell pads, light airy
-              atmosphere, space music, clarity and truth theme, 60 BPM, soft reverb vocals, divine inspiration</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="6" data-yt="" data-img="images/cancion_06_paz.jpg">
           <div class="lyric-header">
             <div class="lyric-num">6</div>
             <div class="lyric-meta">
@@ -1815,18 +2101,13 @@
               Espejo, me veo como Dios me ve.
               Espejo, amándome otra vez.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Yo soy. Espejo de amor. Gracias por existir.
             Gracias, gracias, gracias. Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">self-love meditation music, crystal piano, water sounds, soft violin, gentle choir,
-              self-acceptance theme, 55 BPM, warm and nurturing, divine identity, Hawaiian spiritual influence</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="7" data-yt="" data-img="images/cancion_07_vinculos.jpg">
           <div class="lyric-header">
             <div class="lyric-num">7</div>
             <div class="lyric-meta">
@@ -1850,19 +2131,14 @@
               Pétalos de Rosa, abriendo el corazón.
               Pétalos de Rosa, transmutando la unión.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Limpio en mí lo que comparto contigo.
             Papel para Moscas... Pétalos de Rosa...
             Lo siento, perdóname, gracias, te amo. (×3)
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">romantic ambient meditation, soft strings violin, harp, piano, relationship healing
-              theme, forgiveness and love, 60 BPM, warm female vocals, gentle and compassionate</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="8" data-yt="" data-img="images/cancion_08_memoria.jpg">
           <div class="lyric-header">
             <div class="lyric-num">8</div>
             <div class="lyric-meta">
@@ -1883,19 +2159,14 @@
               Corta, libera, purifica y transmuta en luz divina.
               Toda energía tóxica que en mi ADN camina.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             ¡Estamos libres! Divinidad limpia en mí.
             Hecho está, y hecho ya se encuentra.
             Gracias, gracias, gracias. Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">ancestral healing meditation, shamanic drums, heartbeat rhythm, deep tibetan bowls,
-              ancestral chant, DNA healing theme, 55 BPM, deep male vocals, primal and sacred</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="9" data-yt="" data-img="images/cancion_09_aliento.jpg">
           <div class="lyric-header">
             <div class="lyric-num">9</div>
             <div class="lyric-meta">
@@ -1920,19 +2191,14 @@
             <div class="bridge">[ Inhala 7 tiempos → Retén 7 → Exhala 7 → Vacío 7 ]
               Repite con consciencia plena...</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Con el aliento de la vida, viviendo en armonía,
             Dando y recibiendo luz.
             Gracias, gracias, gracias. Te amo, te amo, te amo.
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">Hawaiian breathwork meditation, wind sounds, rhythmic breathing guide, ukulele,
-              soft flute, Aloha spiritual theme, 50 BPM, very peaceful, prana energy, mana life force</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="10" data-yt="" data-img="images/cancion_10_ira.jpg">
           <div class="lyric-header">
             <div class="lyric-num">10</div>
             <div class="lyric-meta">
@@ -1942,9 +2208,6 @@
             <a href="#" class="lyric-yt-link">▶ Escuchar (próximamente)</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Fuego crepitante, tambores que se suavizan, cuencos de metal ]</span>
-
             <span class="section-tag">Verso 1</span>
             Hay un fuego en mi pecho que pide ser visto.
             No es mi enemigo, es mi mensajero listo.
@@ -1990,22 +2253,16 @@
             El perdón no es debilidad, es la mayor fortaleza,
             Liberar la ira es recuperar mi propia entereza.
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             El fuego que me quemaba ahora me ilumina.
             Papel para Moscas, Hielo Azul, limpieza que me afina.
             Gracias, gracias, gracias.
             Te amo, te amo, te amo.
             [ El fuego crepitante se convierte en una brasa suave y cálida... ]
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">anger transformation meditation, crackling fire sounds, shamanic drums slowing
-              down, metal bowls, dynamic from intense to peaceful, 70 to 50 BPM transition, emotional release, fire to
-              light transformation</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="11" data-yt="" data-img="images/cancion_11_culpa.jpg">
           <div class="lyric-header">
             <div class="lyric-num">11</div>
             <div class="lyric-meta">
@@ -2015,9 +2272,6 @@
             <a href="#" class="lyric-yt-link">▶ Escuchar (próximamente)</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Piano muy suave, lluvia leve, ambiente íntimo y cálido ]</span>
-
             <span class="section-tag">Verso 1</span>
             Cargué tanto tiempo el peso de mis errores,
             Pensé que merecía vivir entre dolores.
@@ -2062,22 +2316,16 @@
             Lo que importa no es el error sino lo que hago ahora,
             Y lo que hago ahora es amarme en esta aurora.
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             Me abrazo. Me perdono. Me amo.
             Gota de Rocío, Chocolate Caliente, limpio el reclamo.
             Gracias, gracias, gracias.
             Te amo, te amo, te amo.
             [ Piano se desvanece suavemente... ]
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">self-forgiveness meditation music, intimate solo piano, light rain, soft strings,
-              warm close vocals, guilt release theme, 50 BPM, emotional healing, inner child meditation, compassionate
-              and gentle, self-love</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="12" data-yt="" data-img="images/cancion_12_miedo.jpg">
           <div class="lyric-header">
             <div class="lyric-num">12</div>
             <div class="lyric-meta">
@@ -2087,9 +2335,6 @@
             <a href="#" class="lyric-yt-link">▶ Escuchar (próximamente)</a>
           </div>
           <div class="lyric-content">
-            <span class="section-tag">Intro</span>
-            <span class="bridge">[ Viento suave, campanas lejanas, silencio profundo ]</span>
-
             <span class="section-tag">Verso 1</span>
             Hay un umbral en mi vida que he temido cruzar,
             Una puerta que el miedo siempre supo vigilar.
@@ -2133,7 +2378,7 @@
             Soy más que mis miedos, soy más que mis límites,
             Soy el amor que cruza todos los confines.
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             [ La música se abre, se expande, como si el sol saliera ]
             Más allá del umbral... hay libertad...
             Flores de Primavera, Llave de la Luz, Punto Cero.
@@ -2141,15 +2386,9 @@
             Te amo, te amo, te amo.
             [ El viento se convierte en brisa cálida... Silencio y paz ]
           </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">fear release transformation meditation, wind sounds, distant bells, expanding
-              orchestral strings, crescendo emotional moment, 50 BPM building to hopeful resolution, crossing threshold
-              theme, empowerment and freedom</div>
-          </div>
         </div>
 
-        <div class="lyric-panel">
+        <div class="lyric-panel" data-song="13" data-yt="" data-img="images/cancion_13_retorno.jpg">
           <div class="lyric-header">
             <div class="lyric-num">13</div>
             <div class="lyric-meta">
@@ -2170,16 +2409,11 @@
               La Paz del Ser, mi paz eterna para siempre.
               Desde ahora, por toda la eternidad, presente.</div>
 
-            <span class="section-tag">Outro</span>
+            <span class="section-tag">Final</span>
             La Paz del Ser. Cero memorias, pura inspiración.
             Gracias, gracias, gracias.
             Te amo, te amo, te amo.
             [ Las campanas se van apagando suavemente... ]
-          </div>
-          <div class="suno-box">
-            <div class="suno-title">🎛️ Prompt para Suno AI</div>
-            <div class="suno-prompt">closing meditation music, tibetan bells, calm ocean, very slow ambient 50 BPM,
-              sacred ending ceremony, protection and sealing theme, decreasing tempo, peaceful resolution</div>
           </div>
         </div>
 
@@ -2203,6 +2437,33 @@
     <p style="margin-top:1.5rem; opacity:0.4; font-size:0.72rem">© 2025 El Estado del Ser · Producción musical
       próximamente en todas las plataformas</p>
   </footer>
+
+  <!-- ══════════════ YOUTUBE MODAL ══════════════ -->
+  <div id="ytModal" class="yt-modal" aria-modal="true" role="dialog" aria-label="Reproductor de canción" hidden>
+    <div class="yt-modal-backdrop"></div>
+    <div class="yt-modal-card">
+      <button class="yt-modal-close" id="ytModalClose" aria-label="Cerrar">&times;</button>
+      <div class="yt-modal-header">
+        <div class="yt-modal-cover">
+          <img id="ytModalImg" src="" alt="">
+        </div>
+        <div class="yt-modal-meta">
+          <div class="yt-modal-song-num" id="ytModalNum"></div>
+          <div class="yt-modal-title" id="ytModalTitle"></div>
+          <div class="yt-modal-purpose" id="ytModalPurpose"></div>
+        </div>
+      </div>
+      <div class="yt-modal-player">
+        <iframe id="ytModalFrame" src="" width="100%" height="100%" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="YouTube video player"></iframe>
+        <div class="yt-modal-coming-soon" id="ytModalComingSoon" hidden>
+          <div class="yt-modal-coming-icon">🎵</div>
+          <p>Esta canción estará disponible próximamente en YouTube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ══════════════ JAVASCRIPT ══════════════ -->
   <script>
@@ -2233,7 +2494,8 @@
 
     // ── Track item toggle (guide descriptions) ──
     document.querySelectorAll('.track-item').forEach(item => {
-      item.addEventListener('click', () => {
+      item.addEventListener('click', (e) => {
+        if (e.target.closest('.track-yt')) return; // modal handler takes over
         const desc = item.querySelector('.track-description');
         const text = item.dataset.desc || '';
         if (desc.textContent !== text) desc.textContent = text;
@@ -2246,6 +2508,84 @@
         }
       });
     });
+
+    // ── YouTube Modal ──
+    (function () {
+      const modal   = document.getElementById('ytModal');
+      const backdrop= modal.querySelector('.yt-modal-backdrop');
+      const closeBtn= document.getElementById('ytModalClose');
+      const frame   = document.getElementById('ytModalFrame');
+      const img     = document.getElementById('ytModalImg');
+      const numEl   = document.getElementById('ytModalNum');
+      const titleEl = document.getElementById('ytModalTitle');
+      const purpEl  = document.getElementById('ytModalPurpose');
+      const coming  = document.getElementById('ytModalComingSoon');
+
+      function openModal(data) {
+        numEl.textContent  = 'Canción ' + data.songNum;
+        titleEl.textContent= data.songTitle;
+        purpEl.textContent = data.songPurpose;
+        img.src            = data.imgSrc;
+        img.alt            = data.songTitle;
+
+        if (data.ytId) {
+          const bareId = data.ytId.split('?')[0];
+          frame.src    = 'https://www.youtube-nocookie.com/embed/' + bareId + '?autoplay=1&rel=0';
+          frame.hidden = false;
+          coming.hidden= true;
+        } else {
+          frame.src    = '';
+          frame.hidden = true;
+          coming.hidden= false;
+        }
+
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function closeModal() {
+        modal.hidden = true;
+        frame.src    = '';
+        frame.hidden = false;
+        coming.hidden= true;
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      backdrop.addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !modal.hidden) closeModal();
+      });
+
+      // Intercept all YouTube buttons
+      document.querySelectorAll('.track-yt, .lyric-yt-link').forEach(function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const trackItem  = el.closest('[data-song]');
+          const lyricPanel = el.closest('.lyric-panel');
+          let data = { songNum:'', ytId:'', imgSrc:'', songTitle:'', songPurpose:'' };
+
+          if (trackItem) {
+            data.songNum    = trackItem.dataset.song   || '';
+            data.ytId       = trackItem.dataset.yt     || '';
+            data.imgSrc     = trackItem.dataset.img    || '';
+            data.songTitle  = trackItem.dataset.title  || '';
+            data.songPurpose= trackItem.dataset.purpose|| '';
+          } else if (lyricPanel) {
+            data.songNum    = lyricPanel.dataset.song  || '';
+            data.ytId       = lyricPanel.dataset.yt    || '';
+            data.imgSrc     = lyricPanel.dataset.img   || '';
+            data.songTitle  = (lyricPanel.querySelector('.lyric-title')  || {}).textContent || '';
+            data.songPurpose= (lyricPanel.querySelector('.lyric-purpose')|| {}).textContent || '';
+          }
+
+          openModal(data);
+        });
+      });
+    })();
 
     // ── Lyrics tabs ──
     const tabBtns = document.querySelectorAll('.tab-btn');

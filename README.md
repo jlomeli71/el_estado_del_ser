@@ -14,6 +14,8 @@ El **Ho'oponopono** es una antigua técnica hawaiana de reconciliación y perdó
 
 En el siglo XX, la maestra hawaiana **Morrnah Nalamaku Simeona** (1913–1992) lo transformó radicalmente, adaptándolo a la conciencia moderna como un proceso **individual y espiritual** llamado "**Auto-Identidad a través del Ho'oponopono**". Su visión revolucionaria introduce la premisa de la **Responsabilidad Absoluta**: cada experiencia en nuestra vida —sin importar cuán ajena parezca— es el reflejo de memorias almacenadas en nuestro subconsciente, llamado el *Unihipili* o **Niño Interior**.
 
+> 💙 **Nota — Unihipili:** En Ho'oponopono, el *Unihipili* representa al niño interior o subconsciente: la parte que almacena memorias, emociones y experiencias pasadas. Es la esencia pura de la persona, responsable de gestionar los recuerdos. Sanar y cuidar al Unihipili —escucharlo y mimarlo— es crucial para reconciliarse con el pasado y dejar de repetir patrones dolorosos.
+
 Según esta perspectiva, no somos víctimas de las circunstancias externas; somos sus co-creadores a través de patrones de pensamiento y emoción que hemos heredado o vivido. La buena noticia es que también somos los **sanadores** de esos patrones. Al limpiar las memorias que generan esas realidades, abrimos un canal para que llegue la **Inspiración Divina** —no de nuestra mente racional, sino de una fuente de sabiduría superior.
 
 El Dr. **Ihaleakalá Hew Len** popularizó este método al mundo moderno al demostrar cómo sanó a pacientes de un hospital psiquiátrico de alta seguridad revisando sus expedientes y aplicando el proceso de limpieza en sí mismo, sin siquiera tratar a los pacientes directamente. Su trabajo junto con Joe Vitale, documentado en el libro *"Zero Limits"*, llevó el Ho'oponopono a millones de personas en el mundo.
@@ -139,6 +141,8 @@ El miedo es una ilusión tejida con memorias del pasado. Esta pista trabaja con 
 ### 13. Retorno al Puerto
 El viaje concluye donde comenzó: en el centro de tu ser, en ese puerto de paz interior que siempre ha estado allí esperándote. **Ceeport** limpia tu subconsciente de forma continua, devolviendo todo a su estado de pureza original. El **Anillo de Oro** sella tu proceso, protegiéndote energéticamente y asegurando que la serenidad conquistada permanezca contigo. Úsala al final de tus sesiones como cierre y como protección.
 
+> 🔵 **Nota — Ceeport:** *Ceeport* es un símbolo y herramienta de limpieza del Ho'oponopono, creado por el Dr. Ihaleakalá Hew Len. CEEPORT significa *"Clean, Erase, Erase: Port"* (Limpia, Borra, Borra: Puerto), y actúa como un recordatorio para regresar al "puerto" de la Divinidad interior, limpiando memorias subconscientes y atrayendo luz, equilibrio y prosperidad.
+
 ---
 
 ## Letras del Álbum
@@ -207,7 +211,7 @@ Solo permite que se vayan...
 *Lo siento... Perdóname... Gracias... Te amo...*
 Una y otra vez, suavemente, con amor...
 
-**Outro**
+**Final**
 La paz del *"Yo Soy"* está conmigo.
 Está hecho, y hecho está.
 Gracias, gracias, gracias.
@@ -277,7 +281,7 @@ Sientes cómo se disuelve el miedo al dinero...
 Un colibrí llega y te susurra: *"Ya eres próspero..."*
 *Llovizna... Colibrí...*
 
-**Outro**
+**Final**
 Llovizna, llovizna, Colibrí.
 Fluyo con la abundancia de la Divinidad.
 Gracias, gracias, gracias.
@@ -346,7 +350,7 @@ Ahora una luz verde esmeralda llena los espacios vacíos...
 Regenerando, restaurando, renovando...
 *Hielo Azul... Verde Esmeralda...*
 
-**Outro**
+**Final**
 *Hielo Azul, Hielo Azul, Hielo Azul, Verde Esmeralda, Verde Esmeralda.*
 Paz, más allá de todo entendimiento.
 Gracias, gracias, gracias.
@@ -409,7 +413,7 @@ Solo el movimiento sagrado de mi destino.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 Suelto y confío.
 *Hojas de Otoño, Flores de Primavera.*
 Hágase tu voluntad.
@@ -476,7 +480,7 @@ En el silencio del Punto Cero, soy guiado.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 *Llave de la Luz, Llave de la Luz, Llave de la Luz.*
 Cerrando programas, abriendo el canal.
 Gracias, gracias, gracias.
@@ -539,7 +543,7 @@ Solo hay un alma perfecta en proceso de expansión.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 *Yo soy. Espejo de amor.* Gracias por existir.
 Gracias, gracias, gracias.
 Te amo, te amo, te amo.
@@ -601,7 +605,7 @@ Reconociéndose en el amor más allá de la cruz.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 Limpio en mí lo que comparto contigo.
 *Papel para Moscas... Pétalos de Rosa...*
 Lo siento, perdóname, gracias, te amo.
@@ -665,7 +669,7 @@ Sanando lo que fue y lo que todavía vendrá.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 ¡Estamos libres! *Divinidad limpia en mí.*
 Hecho está, y hecho ya se encuentra.
 Gracias, gracias, gracias.
@@ -731,7 +735,7 @@ Y cada aliento me recuerda que nunca he estado perdido.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 Con el aliento de la vida, viviendo en armonía,
 Dando y recibiendo luz.
 Gracias, gracias, gracias.
@@ -806,7 +810,7 @@ Liberar la ira es recuperar mi propia entereza.
 Soy más que mi enojo, soy más que mi dolor,
 Soy un ser de luz aprendiendo el lenguaje del amor.
 
-**Outro**
+**Final**
 El fuego que me quemaba ahora me ilumina.
 *Papel para Moscas, Hielo Azul,* limpieza que me afina.
 Gracias, gracias, gracias.
@@ -886,7 +890,7 @@ Porque abre la puerta a vivir de modos
 Más libres, más ligeros, más honestos y más plenos,
 Más llenos del amor que siempre merecemos.
 
-**Outro**
+**Final**
 Me abrazo. Me perdono. Me amo.
 *Gota de Rocío, Chocolate Caliente,* limpio el reclamo.
 Gracias, gracias, gracias.
@@ -970,7 +974,7 @@ Soy el amor que cruza todos los confines.
 Y al otro lado del umbral que hoy atravieso,
 Me espera la vida que siempre prometí en mi proceso.
 
-**Outro**
+**Final**
 *(La música se abre, se expande, como si el sol saliera)*
 Más allá del umbral... hay libertad...
 *Flores de Primavera, Llave de la Luz, Punto Cero.*
@@ -1040,7 +1044,7 @@ Como un faro de luz que nunca se apagará.
 
 *(Repetir coro)*
 
-**Outro**
+**Final**
 *La Paz del Ser.* Cero memorias, pura inspiración.
 Gracias, gracias, gracias.
 Te amo, te amo, te amo.
@@ -1061,7 +1065,7 @@ Te amo, te amo, te amo.
 ### Configuración Recomendada para Todo el Álbum
 
 1. **Estilo global del álbum:** `meditation music, healing frequencies, Ho'oponopono inspired, Hawaiian spiritual, ambient new age, 432Hz tuning`
-2. **Estructura vocal:** Las letras pueden usarse directamente en Suno con etiquetas como `[Verso 1]`, `[Coro]`, `[Puente]`, `[Outro]`
+2. **Estructura vocal:** Las letras pueden usarse directamente en Suno con etiquetas como `[Verso 1]`, `[Coro]`, `[Puente]`, `[Final]`
 3. **Usar el modo "Custom"** en Suno para pegar las letras y los prompts de estilo
 4. **Pedir "Instrumental version"** también para cada canción, para meditación sin guía vocal
 5. **Tono general:** Cálido, espiritual, no dramático, envolvente como un abrazo
@@ -1079,3 +1083,6 @@ Te amo, te amo, te amo.
 *"El Estado del Ser" es más que un álbum. Es una práctica, un ritual, un camino de regreso a uno mismo. Que cada nota te lleve más cerca de tu paz interior."*
 
 ---
+
+
+
