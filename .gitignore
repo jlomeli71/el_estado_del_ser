@@ -4,3 +4,6 @@ mnt/
 # Archivos del sistema
 *.pdf
 *.docx
+
+# Archivos de musica y videos
+music/*
