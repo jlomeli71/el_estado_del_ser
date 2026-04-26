@@ -1063,6 +1063,7 @@
         display: none;
       }
     }
+
     /* ── DESIGN ENHANCEMENTS ── */
 
     /* Hero: gradient más rico con amethyst */
@@ -1210,8 +1211,15 @@
     }
 
     @keyframes modalIn {
-      from { opacity: 0; transform: scale(0.92) translateY(24px); }
-      to   { opacity: 1; transform: scale(1)    translateY(0); }
+      from {
+        opacity: 0;
+        transform: scale(0.92) translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
     }
 
     .yt-modal-close {
@@ -1317,7 +1325,9 @@
       font-size: 0.92rem;
     }
 
-    .yt-modal-coming-soon[hidden] { display: none; }
+    .yt-modal-coming-soon[hidden] {
+      display: none;
+    }
 
     .yt-modal-coming-icon {
       font-size: 3rem;
@@ -1334,12 +1344,26 @@
     }
 
     @media (max-width: 640px) {
-      .yt-modal-card { max-width: 100%; border-radius: 16px; }
-      .yt-modal-header { padding: 1.25rem 1.25rem 1rem; gap: 1rem; }
-      .yt-modal-cover { width: 72px; height: 72px; border-radius: 10px; }
-      .yt-modal-title { font-size: 1.2rem; }
-    }
+      .yt-modal-card {
+        max-width: 100%;
+        border-radius: 16px;
+      }
 
+      .yt-modal-header {
+        padding: 1.25rem 1.25rem 1rem;
+        gap: 1rem;
+      }
+
+      .yt-modal-cover {
+        width: 72px;
+        height: 72px;
+        border-radius: 10px;
+      }
+
+      .yt-modal-title {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 
@@ -1378,7 +1402,8 @@
         transforma." — Morrnah Simeona</p>
       <div class="hero-cta">
         <a href="#guia" class="btn btn-primary">🎵 Explorar el Álbum</a>
-        <a href="https://www.youtube.com/playlist?list=PLhHPSBekmq--K6s-AqKRwjCdmfcQsmBWN" class="btn btn-outline" target="_blank" rel="noopener noreferrer">▶ Escuchar en YouTube</a>
+        <a href="https://www.youtube.com/playlist?list=PLOy2oQpyB4oVu2p7JVmVoqu2RQUsySqxL" class="btn btn-outline"
+          target="_blank" rel="noopener noreferrer">▶ Escuchar en YouTube</a>
         <a href="#historia" class="btn btn-outline">Conocer más</a>
       </div>
     </div>
@@ -1647,18 +1672,21 @@
       <span class="section-label reveal">13 Canciones</span>
       <h2 class="section-title reveal">Guía del <em>Viajero</em></h2>
       <p class="section-text reveal">Cada canción es un portal hacia una dimensión específica de tu ser. Haz clic en
-        cada pista para conocer su propósito y cómo usarla en tu práctica.</p>
+        cada canción para conocer su propósito y cómo usarla en tu práctica.</p>
       <p class="section-text reveal" style="margin-top:1.5rem">
-        <a href="https://www.youtube.com/playlist?list=PLhHPSBekmq--K6s-AqKRwjCdmfcQsmBWN" target="_blank" rel="noopener noreferrer" style="color:var(--slate);font-weight:600">▶ Escuchar el álbum completo en YouTube</a>
+        <a href="https://www.youtube.com/playlist?list=PLOy2oQpyB4oVu2p7JVmVoqu2RQUsySqxL" target="_blank"
+          rel="noopener noreferrer" style="color:var(--slate);font-weight:600">▶ Escuchar el álbum completo en
+          YouTube</a>
       </p>
 
       <div class="tracklist" id="tracklist">
 
         <div class="track-item reveal"
-          data-desc="Esta pista es el cimiento de toda tu práctica. Las cuatro frases sagradas —Lo siento, Perdóname, Gracias, Te amo— son pronunciadas aquí como un mantra de apertura. Al asumir la responsabilidad absoluta del 100% de tu experiencia, no te culpas, sino que te empoderas. Reconoces que existe una memoria en tu subconsciente que ha manifestado esta realidad, y eliges liberarla con amor. Úsala al inicio de cualquier sesión de meditación o simplemente cuando sientas que necesitas volver a tu centro."
+          data-desc="Esta canción es el cimiento de toda tu práctica. Las cuatro frases sagradas —Lo siento, Perdóname, Gracias, Te amo— son pronunciadas aquí como un mantra de apertura. Al asumir la responsabilidad absoluta del 100% de tu experiencia, no te culpas, sino que te empoderas. Reconoces que existe una memoria en tu subconsciente que ha manifestado esta realidad, y eliges liberarla con amor. Úsala al inicio de cualquier sesión de meditación o simplemente cuando sientas que necesitas volver a tu centro."
           data-song="1" data-yt="PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" data-img="images/cancion_01_mantra.jpg"
           data-title="El Mantra del Corazón" data-purpose="Base y Limpieza General">
-          <div class="track-thumb"><img src="images/cancion_01_mantra.jpg" alt="El Mantra del Corazón" loading="lazy"></div>
+          <div class="track-thumb"><img src="images/cancion_01_mantra.jpg" alt="El Mantra del Corazón" loading="lazy">
+          </div>
           <div class="track-num">1</div>
           <div class="track-info">
             <div class="track-title">El Mantra del Corazón</div>
@@ -1669,10 +1697,11 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El miedo a la escasez es una de las memorias más profundas del ser humano. Esta pista trabaja directamente sobre los programas de carencia, las creencias heredadas sobre el dinero y la ansiedad financiera. La Llovizna cae como un suministro constante e inagotable de abundancia divina, mientras el Colibrí —mensajero de alegría y prosperidad— cancela el pánico y eleva tu vibración hacia la frecuencia de la riqueza que ya existe en el universo aguardando ser recibida."
-          data-song="2" data-yt="lVFkq6GPEgo" data-img="images/cancion_02_lluvia.jpg"
-          data-title="Lluvia de Provisión" data-purpose="Prosperidad y Abundancia">
-          <div class="track-thumb"><img src="images/cancion_02_lluvia.jpg" alt="Lluvia de Provisión" loading="lazy"></div>
+          data-desc="El miedo a la escasez es una de las memorias más profundas del ser humano. Esta canción trabaja directamente sobre los programas de carencia, las creencias heredadas sobre el dinero y la ansiedad financiera. La Llovizna cae como un suministro constante e inagotable de abundancia divina, mientras el Colibrí —mensajero de alegría y prosperidad— cancela el pánico y eleva tu vibración hacia la frecuencia de la riqueza que ya existe en el universo aguardando ser recibida."
+          data-song="2" data-yt="lVFkq6GPEgo" data-img="images/cancion_02_lluvia.jpg" data-title="Lluvia de Provisión"
+          data-purpose="Prosperidad y Abundancia">
+          <div class="track-thumb"><img src="images/cancion_02_lluvia.jpg" alt="Lluvia de Provisión" loading="lazy">
+          </div>
           <div class="track-num">2</div>
           <div class="track-info">
             <div class="track-title">Lluvia de Provisión</div>
@@ -1684,8 +1713,8 @@
 
         <div class="track-item reveal"
           data-desc="El cuerpo físico es el templo donde se almacenan las memorias emocionales. Cuando hay dolor, ya sea físico o emocional, es una señal de que algo pide ser liberado. El Hielo Azul enfría y alivia la inflamación de las memorias traumáticas, mientras el Verde Esmeralda activa los procesos de regeneración celular. Esta frecuencia te invita a hablarle a tu cuerpo con compasión, reconociendo su sabiduría y honrando su proceso de sanación."
-          data-song="3" data-yt="" data-img="images/cancion_03_hielo.jpg"
-          data-title="Calma en el Hielo" data-purpose="Salud y Alivio del Dolor">
+          data-song="3" data-yt="" data-img="images/cancion_03_hielo.jpg" data-title="Calma en el Hielo"
+          data-purpose="Salud y Alivio del Dolor">
           <div class="track-thumb"><img src="images/cancion_03_hielo.jpg" alt="Calma en el Hielo" loading="lazy"></div>
           <div class="track-num">3</div>
           <div class="track-info">
@@ -1697,9 +1726,9 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El desapego no es abandono, es liberación con amor. Como los árboles que sueltan sus hojas en otoño para renacer en primavera, esta pista te acompaña en el proceso de soltar lo que ya cumplió su propósito: relaciones que se han cerrado, hábitos que ya no te sirven, versiones de ti mismo que ya superaste. Las Hojas de Otoño transmutan el apego, y las Flores de Primavera limpian el miedo al vacío que viene antes del renacer."
-          data-song="4" data-yt="" data-img="images/cancion_04_hojas.jpg"
-          data-title="Soltando las Hojas" data-purpose="Desapego y Transición">
+          data-desc="El desapego no es abandono, es liberación con amor. Como los árboles que sueltan sus hojas en otoño para renacer en primavera, esta canción te acompaña en el proceso de soltar lo que ya cumplió su propósito: relaciones que se han cerrado, hábitos que ya no te sirven, versiones de ti mismo que ya superaste. Las Hojas de Otoño transmutan el apego, y las Flores de Primavera limpian el miedo al vacío que viene antes del renacer."
+          data-song="4" data-yt="" data-img="images/cancion_04_hojas.jpg" data-title="Soltando las Hojas"
+          data-purpose="Desapego y Transición">
           <div class="track-thumb"><img src="images/cancion_04_hojas.jpg" alt="Soltando las Hojas" loading="lazy"></div>
           <div class="track-num">4</div>
           <div class="track-info">
@@ -1711,9 +1740,9 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="Cuando la mente racional intenta resolver un problema espiritual, a menudo crea más confusión. Esta pista te invita a soltar el control mental y confiar en la sabiduría divina. La Llave de la Luz apaga los programas mentales que nublan tu juicio y te devuelve al Punto Cero: ese espacio de silencio interior donde no hay pensamiento, solo presencia, y donde la inspiración divina puede finalmente ser escuchada."
-          data-song="5" data-yt="" data-img="images/cancion_05_luz.jpg"
-          data-title="La Luz de la Verdad" data-purpose="Claridad y Decisiones">
+          data-desc="Cuando la mente racional intenta resolver un problema espiritual, a menudo crea más confusión. Esta canción te invita a soltar el control mental y confiar en la sabiduría divina. La Llave de la Luz apaga los programas mentales que nublan tu juicio y te devuelve al Punto Cero: ese espacio de silencio interior donde no hay pensamiento, solo presencia, y donde la inspiración divina puede finalmente ser escuchada."
+          data-song="5" data-yt="" data-img="images/cancion_05_luz.jpg" data-title="La Luz de la Verdad"
+          data-purpose="Claridad y Decisiones">
           <div class="track-thumb"><img src="images/cancion_05_luz.jpg" alt="La Luz de la Verdad" loading="lazy"></div>
           <div class="track-num">5</div>
           <div class="track-info">
@@ -1725,9 +1754,9 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El amor propio es la raíz de toda sanación. Esta pista es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios, las críticas y las máscaras que el mundo nos invita a usar. A través de la oración Yo Soy el Yo, reconoces tu identidad como una extensión directa e impecable de lo Divino. El Espejo espiritual te devuelve la imagen de quién realmente eres: perfecto, completo y merecedor de amor."
-          data-song="6" data-yt="" data-img="images/cancion_06_paz.jpg"
-          data-title="Paz en el Reflejo" data-purpose="Amor Propio y Autoestima">
+          data-desc="El amor propio es la raíz de toda sanación. Esta canción es un viaje hacia la recuperación de tu esencia más pura, más allá de los juicios, las críticas y las máscaras que el mundo nos invita a usar. A través de la oración Yo Soy el Yo, reconoces tu identidad como una extensión directa e impecable de lo Divino. El Espejo espiritual te devuelve la imagen de quién realmente eres: perfecto, completo y merecedor de amor."
+          data-song="6" data-yt="" data-img="images/cancion_06_paz.jpg" data-title="Paz en el Reflejo"
+          data-purpose="Amor Propio y Autoestima">
           <div class="track-thumb"><img src="images/cancion_06_paz.jpg" alt="Paz en el Reflejo" loading="lazy"></div>
           <div class="track-num">6</div>
           <div class="track-info">
@@ -1739,10 +1768,11 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="Toda relación es un espejo de nuestro mundo interior. Lo que nos molesta del otro es, invariablemente, una memoria en nosotros que pide atención. Esta pista utiliza el Papel para Moscas para atrapar juicios y resentimientos antes de que se conviertan en conflicto, y los Pétalos de Rosa para transmutar el desamor en comprensión. El Chocolate Caliente suaviza las memorias de manipulación y restaura la equanimidad en tus relaciones más íntimas."
-          data-song="7" data-yt="" data-img="images/cancion_07_vinculos.jpg"
-          data-title="Vínculos de Seda" data-purpose="Relaciones y Conflictos">
-          <div class="track-thumb"><img src="images/cancion_07_vinculos.jpg" alt="Vínculos de Seda" loading="lazy"></div>
+          data-desc="Toda relación es un espejo de nuestro mundo interior. Lo que nos molesta del otro es, invariablemente, una memoria en nosotros que pide atención. Esta canción utiliza el Papel para Moscas para atrapar juicios y resentimientos antes de que se conviertan en conflicto, y los Pétalos de Rosa para transmutar el desamor en comprensión. El Chocolate Caliente suaviza las memorias de manipulación y restaura la equanimidad en tus relaciones más íntimas."
+          data-song="7" data-yt="" data-img="images/cancion_07_vinculos.jpg" data-title="Vínculos de Seda"
+          data-purpose="Relaciones y Conflictos">
+          <div class="track-thumb"><img src="images/cancion_07_vinculos.jpg" alt="Vínculos de Seda" loading="lazy">
+          </div>
           <div class="track-num">7</div>
           <div class="track-info">
             <div class="track-title">Vínculos de Seda</div>
@@ -1754,8 +1784,8 @@
 
         <div class="track-item reveal"
           data-desc="La sanación generacional es uno de los actos más profundos de amor que podemos realizar. Esta canción corta los lazos kármicos con ancestros y parientes que, sin saberlo, nos transmitieron sus dolores y sus miedos a través del ADN y de los patrones familiares. Al liberar estas memorias colectivas, no solo te liberas tú: liberas también a quienes vinieron antes y abres un camino más limpio para quienes vendrán después."
-          data-song="8" data-yt="" data-img="images/cancion_08_memoria.jpg"
-          data-title="Memoria Sagrada" data-purpose="Sanación Ancestral">
+          data-song="8" data-yt="" data-img="images/cancion_08_memoria.jpg" data-title="Memoria Sagrada"
+          data-purpose="Sanación Ancestral">
           <div class="track-thumb"><img src="images/cancion_08_memoria.jpg" alt="Memoria Sagrada" loading="lazy"></div>
           <div class="track-num">8</div>
           <div class="track-info">
@@ -1768,9 +1798,10 @@
 
         <div class="track-item reveal"
           data-desc="El Ha, el aliento sagrado, es la herramienta más simple y más poderosa que existe: siempre disponible, siempre presente. Esta meditación rítmica te guía a través de la respiración consciente, oxigenando no solo el cuerpo sino también el espíritu. Al vibrar en Aloha —la fuerza vital del amor, la paz y la compasión de los pueblos polinésicos— bendices y recibes la energía que necesitas para vivir en plena armonía."
-          data-song="9" data-yt="" data-img="images/cancion_09_aliento.jpg"
-          data-title="El Aliento de Vida" data-purpose="Conexión Espiritual">
-          <div class="track-thumb"><img src="images/cancion_09_aliento.jpg" alt="El Aliento de Vida" loading="lazy"></div>
+          data-song="9" data-yt="" data-img="images/cancion_09_aliento.jpg" data-title="El Aliento de Vida"
+          data-purpose="Conexión Espiritual">
+          <div class="track-thumb"><img src="images/cancion_09_aliento.jpg" alt="El Aliento de Vida" loading="lazy">
+          </div>
           <div class="track-num">9</div>
           <div class="track-info">
             <div class="track-title">El Aliento de Vida</div>
@@ -1781,9 +1812,9 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="La ira no es tu enemiga. Es una señal sagrada: una memoria que pide ser vista, reconocida y liberada. Esta pista trabaja con la energía del fuego transformador, convirtiendo la rabia en claridad y la frustración en fuerza creativa. El Papel para Moscas captura la ira antes de que dañe, el Hielo Azul enfría la temperatura emocional, y el Rodillo de Masa aplana los conflictos que alimentan el enojo. Al final, lo que era fuego destructivo se convierte en luz que ilumina."
-          data-song="10" data-yt="" data-img="images/cancion_10_ira.jpg"
-          data-title="Fuego que Sana" data-purpose="Liberación de la Ira">
+          data-desc="La ira no es tu enemiga. Es una señal sagrada: una memoria que pide ser vista, reconocida y liberada. Esta canción trabaja con la energía del fuego transformador, convirtiendo la rabia en claridad y la frustración en fuerza creativa. El Papel para Moscas captura la ira antes de que dañe, el Hielo Azul enfría la temperatura emocional, y el Rodillo de Masa aplana los conflictos que alimentan el enojo. Al final, lo que era fuego destructivo se convierte en luz que ilumina."
+          data-song="10" data-yt="" data-img="images/cancion_10_ira.jpg" data-title="Fuego que Sana"
+          data-purpose="Liberación de la Ira">
           <div class="track-thumb"><img src="images/cancion_10_ira.jpg" alt="Fuego que Sana" loading="lazy"></div>
           <div class="track-num">10</div>
           <div class="track-info">
@@ -1795,10 +1826,11 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="La culpa es el peso más innecesario que cargamos. Esta pista te acompaña en el acto más valiente y más amoroso: perdonarte a ti mismo. La Gota de Rocío transforma el dolor de las memorias de falla y error, y el Chocolate Caliente disuelve las memorias de haber tomado ventaja o de haber lastimado. Las cuatro frases sagradas aquí actúan como un abrazo profundo: el abrazo que tu Niño Interior lleva esperando toda la vida."
-          data-song="11" data-yt="" data-img="images/cancion_11_culpa.jpg"
-          data-title="El Abrazo del Perdón" data-purpose="Liberación de la Culpa">
-          <div class="track-thumb"><img src="images/cancion_11_culpa.jpg" alt="El Abrazo del Perdón" loading="lazy"></div>
+          data-desc="La culpa es el peso más innecesario que cargamos. Esta canción te acompaña en el acto más valiente y más amoroso: perdonarte a ti mismo. La Gota de Rocío transforma el dolor de las memorias de falla y error, y el Chocolate Caliente disuelve las memorias de haber tomado ventaja o de haber lastimado. Las cuatro frases sagradas aquí actúan como un abrazo profundo: el abrazo que tu Niño Interior lleva esperando toda la vida."
+          data-song="11" data-yt="" data-img="images/cancion_11_culpa.jpg" data-title="El Abrazo del Perdón"
+          data-purpose="Liberación de la Culpa">
+          <div class="track-thumb"><img src="images/cancion_11_culpa.jpg" alt="El Abrazo del Perdón" loading="lazy">
+          </div>
           <div class="track-num">11</div>
           <div class="track-info">
             <div class="track-title">El Abrazo del Perdón</div>
@@ -1809,10 +1841,11 @@
         </div>
 
         <div class="track-item reveal"
-          data-desc="El miedo es una ilusión tejida con memorias del pasado. Esta pista trabaja con las raíces más profundas del temor: el miedo a lo desconocido, al fracaso, a la pérdida, a no ser suficiente. Las Flores de Primavera limpian el miedo al cambio, la Llave de la Luz ilumina las sombras que el miedo proyecta, y el Punto Cero te devuelve al estado de apertura y confianza total. Más allá del umbral del miedo, te espera una versión más libre, más auténtica y más valiente de ti mismo."
-          data-song="12" data-yt="" data-img="images/cancion_12_miedo.jpg"
-          data-title="Más Allá del Umbral" data-purpose="Liberación del Miedo">
-          <div class="track-thumb"><img src="images/cancion_12_miedo.jpg" alt="Más Allá del Umbral" loading="lazy"></div>
+          data-desc="El miedo es una ilusión tejida con memorias del pasado. Esta canción trabaja con las raíces más profundas del temor: el miedo a lo desconocido, al fracaso, a la pérdida, a no ser suficiente. Las Flores de Primavera limpian el miedo al cambio, la Llave de la Luz ilumina las sombras que el miedo proyecta, y el Punto Cero te devuelve al estado de apertura y confianza total. Más allá del umbral del miedo, te espera una versión más libre, más auténtica y más valiente de ti mismo."
+          data-song="12" data-yt="" data-img="images/cancion_12_miedo.jpg" data-title="Más Allá del Umbral"
+          data-purpose="Liberación del Miedo">
+          <div class="track-thumb"><img src="images/cancion_12_miedo.jpg" alt="Más Allá del Umbral" loading="lazy">
+          </div>
           <div class="track-num">12</div>
           <div class="track-info">
             <div class="track-title">Más Allá del Umbral</div>
@@ -1824,9 +1857,10 @@
 
         <div class="track-item reveal"
           data-desc="El viaje concluye donde comenzó: en el centro de tu ser, en ese puerto de paz interior que siempre ha estado allí esperándote. Ceeport limpia tu subconsciente de forma continua, devolviendo todo a su estado de pureza original. El Anillo de Oro sella tu proceso, protegiéndote energéticamente y asegurando que la serenidad conquistada permanezca contigo. Úsala al final de tus sesiones como cierre y como protección."
-          data-song="13" data-yt="" data-img="images/cancion_13_retorno.jpg"
-          data-title="Retorno al Puerto" data-purpose="Cierre y Protección">
-          <div class="track-thumb"><img src="images/cancion_13_retorno.jpg" alt="Retorno al Puerto" loading="lazy"></div>
+          data-song="13" data-yt="" data-img="images/cancion_13_retorno.jpg" data-title="Retorno al Puerto"
+          data-purpose="Cierre y Protección">
+          <div class="track-thumb"><img src="images/cancion_13_retorno.jpg" alt="Retorno al Puerto" loading="lazy">
+          </div>
           <div class="track-num">13</div>
           <div class="track-info">
             <div class="track-title">Retorno al Puerto</div>
@@ -1869,14 +1903,16 @@
       <div id="lyricPanels">
 
         <!-- 1 -->
-        <div class="lyric-panel active" data-song="1" data-yt="PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" data-img="images/cancion_01_mantra.jpg">
+        <div class="lyric-panel active" data-song="1" data-yt="PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u"
+          data-img="images/cancion_01_mantra.jpg">
           <div class="lyric-header">
             <div class="lyric-num">1</div>
             <div class="lyric-meta">
               <div class="lyric-title">El Mantra del Corazón</div>
               <div class="lyric-purpose">Base y Limpieza General · Establece la conexión con la Divinidad</div>
             </div>
-            <a href="https://youtu.be/PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" class="lyric-yt-link" target="_blank" rel="noopener noreferrer">▶ Escuchar</a>
+            <a href="https://youtu.be/PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u" class="lyric-yt-link" target="_blank"
+              rel="noopener noreferrer">▶ Escuchar</a>
           </div>
           <div class="lyric-content">
             <span class="section-tag">Verso 1</span>
@@ -1934,7 +1970,8 @@
               <div class="lyric-title">Lluvia de Provisión</div>
               <div class="lyric-purpose">Prosperidad y Abundancia · Limpia memorias de carencia</div>
             </div>
-            <a href="https://youtu.be/lVFkq6GPEgo" class="lyric-yt-link" target="_blank" rel="noopener noreferrer">▶ Escuchar</a>
+            <a href="https://youtu.be/lVFkq6GPEgo" class="lyric-yt-link" target="_blank" rel="noopener noreferrer">▶
+              Escuchar</a>
           </div>
           <div class="lyric-content">
             <span class="section-tag">Verso 1</span>
@@ -2551,41 +2588,41 @@
 
     // ── YouTube Modal ──
     (function () {
-      const modal   = document.getElementById('ytModal');
-      const backdrop= modal.querySelector('.yt-modal-backdrop');
-      const closeBtn= document.getElementById('ytModalClose');
-      const frame   = document.getElementById('ytModalFrame');
-      const img     = document.getElementById('ytModalImg');
-      const numEl   = document.getElementById('ytModalNum');
+      const modal = document.getElementById('ytModal');
+      const backdrop = modal.querySelector('.yt-modal-backdrop');
+      const closeBtn = document.getElementById('ytModalClose');
+      const frame = document.getElementById('ytModalFrame');
+      const img = document.getElementById('ytModalImg');
+      const numEl = document.getElementById('ytModalNum');
       const titleEl = document.getElementById('ytModalTitle');
-      const purpEl  = document.getElementById('ytModalPurpose');
-      const coming  = document.getElementById('ytModalComingSoon');
-      const descEl  = document.getElementById('ytModalDesc');
+      const purpEl = document.getElementById('ytModalPurpose');
+      const coming = document.getElementById('ytModalComingSoon');
+      const descEl = document.getElementById('ytModalDesc');
 
       function openModal(data) {
-        numEl.textContent  = 'Canción ' + data.songNum;
-        titleEl.textContent= data.songTitle;
+        numEl.textContent = 'Canción ' + data.songNum;
+        titleEl.textContent = data.songTitle;
         purpEl.textContent = data.songPurpose;
-        img.src            = data.imgSrc;
-        img.alt            = data.songTitle;
+        img.src = data.imgSrc;
+        img.alt = data.songTitle;
 
         if (data.ytId) {
           const bareId = data.ytId.split('?')[0];
-          frame.src    = 'https://www.youtube-nocookie.com/embed/' + bareId + '?autoplay=1&rel=0';
+          frame.src = 'https://www.youtube-nocookie.com/embed/' + bareId + '?autoplay=1&rel=0';
           frame.hidden = false;
-          coming.hidden= true;
+          coming.hidden = true;
         } else {
-          frame.src    = '';
+          frame.src = '';
           frame.hidden = true;
-          coming.hidden= false;
+          coming.hidden = false;
         }
 
         if (data.desc) {
           descEl.textContent = data.desc;
-          descEl.hidden      = false;
+          descEl.hidden = false;
         } else {
           descEl.textContent = '';
-          descEl.hidden      = true;
+          descEl.hidden = true;
         }
 
         modal.hidden = false;
@@ -2594,44 +2631,44 @@
       }
 
       function closeModal() {
-        modal.hidden       = true;
-        frame.src          = '';
-        frame.hidden       = false;
-        coming.hidden      = true;
+        modal.hidden = true;
+        frame.src = '';
+        frame.hidden = false;
+        coming.hidden = true;
         descEl.textContent = '';
-        descEl.hidden      = true;
+        descEl.hidden = true;
         document.body.style.overflow = '';
       }
 
       closeBtn.addEventListener('click', closeModal);
       backdrop.addEventListener('click', closeModal);
-      document.addEventListener('keydown', function(e) {
+      document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && !modal.hidden) closeModal();
       });
 
       // Intercept all YouTube buttons
-      document.querySelectorAll('.track-yt, .lyric-yt-link').forEach(function(el) {
-        el.addEventListener('click', function(e) {
+      document.querySelectorAll('.track-yt, .lyric-yt-link').forEach(function (el) {
+        el.addEventListener('click', function (e) {
           e.preventDefault();
           e.stopPropagation();
 
-          const trackItem  = el.closest('[data-song]');
+          const trackItem = el.closest('[data-song]');
           const lyricPanel = el.closest('.lyric-panel');
-          let data = { songNum:'', ytId:'', imgSrc:'', songTitle:'', songPurpose:'' };
+          let data = { songNum: '', ytId: '', imgSrc: '', songTitle: '', songPurpose: '' };
 
           if (trackItem) {
-            data.songNum    = trackItem.dataset.song   || '';
-            data.ytId       = trackItem.dataset.yt     || '';
-            data.imgSrc     = trackItem.dataset.img    || '';
-            data.songTitle  = trackItem.dataset.title  || '';
-            data.songPurpose= trackItem.dataset.purpose|| '';
-            data.desc       = trackItem.dataset.desc   || '';
+            data.songNum = trackItem.dataset.song || '';
+            data.ytId = trackItem.dataset.yt || '';
+            data.imgSrc = trackItem.dataset.img || '';
+            data.songTitle = trackItem.dataset.title || '';
+            data.songPurpose = trackItem.dataset.purpose || '';
+            data.desc = trackItem.dataset.desc || '';
           } else if (lyricPanel) {
-            data.songNum    = lyricPanel.dataset.song  || '';
-            data.ytId       = lyricPanel.dataset.yt    || '';
-            data.imgSrc     = lyricPanel.dataset.img   || '';
-            data.songTitle  = (lyricPanel.querySelector('.lyric-title')  || {}).textContent || '';
-            data.songPurpose= (lyricPanel.querySelector('.lyric-purpose')|| {}).textContent || '';
+            data.songNum = lyricPanel.dataset.song || '';
+            data.ytId = lyricPanel.dataset.yt || '';
+            data.imgSrc = lyricPanel.dataset.img || '';
+            data.songTitle = (lyricPanel.querySelector('.lyric-title') || {}).textContent || '';
+            data.songPurpose = (lyricPanel.querySelector('.lyric-purpose') || {}).textContent || '';
           }
 
           openModal(data);

@@ -91,7 +91,7 @@ el_estado_del_ser/
 - Las imágenes decorativas del .docx original no se incluyeron en el markdown (solo descripciones de prompt)
 - Canción 1 ya tiene link real de YouTube: https://youtu.be/PaUH2Qn-Brc?si=L3zllZRjOD8BAj-u
 - Canción 2 ya tiene link real de YouTube: https://youtu.be/lVFkq6GPEgo
-- Álbum completo (playlist): https://www.youtube.com/playlist?list=PLhHPSBekmq--K6s-AqKRwjCdmfcQsmBWN
+- Álbum completo (playlist): https://www.youtube.com/playlist?list=PLOy2oQpyB4oVu2p7JVmVoqu2RQUsySqxL
 
 ---
 
