@@ -7,3 +7,6 @@ mnt/
 
 # Archivos de musica y videos
 music/*
+videos/*
+*.mp4
+*.mp3
