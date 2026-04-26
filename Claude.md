@@ -44,13 +44,13 @@ Para cada canción adicional se generó:
 - Links temporales de YouTube (inactivos hasta tener la lista real)
 
 ### 6. Repositorio GitHub
-- Repositorio: `https://github.com/jlomeli71/la_magia_del_ser`
+- Repositorio: `https://github.com/jlomeli71/el_estado_del_ser`
 - Todos los archivos generados subidos al repositorio
 
 ## Estructura de Archivos
 
 ```
-la_magia_del_ser/
+el_estado_del_ser/
 ├── Claude.md           ← Este archivo
 ├── README.md           ← Documento principal del proyecto
 ├── index.html          ← Página web
@@ -109,11 +109,11 @@ El sitio es HTML/CSS/JS puro — no requiere servidor ni proceso de compilación
 **Ventajas:** Gratuito, sin cuenta adicional, URL directa desde el repositorio actual.
 
 **Pasos:**
-1. Ir a: `https://github.com/jlomeli71/la_magia_del_ser/settings/pages`
+1. Ir a: `https://github.com/jlomeli71/el_estado_del_ser/settings/pages`
 2. En **Source** seleccionar: `Deploy from a branch`
 3. En **Branch** seleccionar: `main` / `/ (root)`
 4. Guardar — en 1-2 minutos el sitio estará en:
-   `https://jlomeli71.github.io/la_magia_del_ser/`
+   `https://jlomeli71.github.io/el_estado_del_ser/`
 5. Cada `git push` a `main` actualiza el sitio automáticamente.
 
 **Limitación:** La URL incluye el nombre del repositorio (a menos que uses dominio propio).
@@ -127,7 +127,7 @@ El sitio es HTML/CSS/JS puro — no requiere servidor ni proceso de compilación
 **Pasos:**
 1. Crear cuenta en https://netlify.com (gratis)
 2. "Add new site" → "Import an existing project" → GitHub
-3. Seleccionar repositorio `la_magia_del_ser`
+3. Seleccionar repositorio `el_estado_del_ser`
 4. En **Build settings** dejar todo en blanco (no hay proceso de build)
 5. Deploy — URL tipo: `https://el-estado-del-ser.netlify.app`
 6. Cada `git push` a `main` actualiza el sitio automáticamente.
@@ -141,9 +141,9 @@ El sitio es HTML/CSS/JS puro — no requiere servidor ni proceso de compilación
 **Pasos:**
 1. Crear cuenta en https://vercel.com (gratis con GitHub)
 2. "Add New Project" → Import desde GitHub
-3. Seleccionar repositorio `la_magia_del_ser`
+3. Seleccionar repositorio `el_estado_del_ser`
 4. Dejar configuración por defecto (detecta HTML estático)
-5. Deploy — URL tipo: `https://la-magia-del-ser.vercel.app`
+5. Deploy — URL tipo: `https://el-estado-del-ser.vercel.app`
 6. Cada `git push` a `main` actualiza el sitio automáticamente.
 
 ---
